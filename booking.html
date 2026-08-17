@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Hibret Hotel  Book Now</title>
+        <link rel="stylesheet" href="style.css">
+        
+    </head>
+    <body>
+        <nav>
+            <div class="logo">
+                Hibret Hotel
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="rooms.html">Rooms</a>
+                <a href="services.html">Services</a>
+                <a href="facilities.html">Facilities</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <a href="booking.html" class="book-btn">Book Now</a>
+        </nav>
+        <main>
+            <section class="page-hero">
+                <div>
+                    <h1>Book your stay</h1>
+                    <p>send us your reservation request.</p>
+                </div>
+</section>
+<section class="section section-light">
+    <div class="booking-container">
+            <h2 class="section-title">Reservation Request</h2>
+        <form name="booking" method="POST" data-netlify="true">
+            <label for="name">Full Name</label>
+        <input type="text" name="name" id="name"  required>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" required>
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" required>
+        <label for="room">Room Type</label>
+        <select id="room" name="room" required>
+            <option value="">Select a room</option>
+            <option value="standard">Standard Room</option>
+            <option value="deluxe">Deluxe Room</option>
+            <option value="Suite">Suite</option>
+        </select>
+        <label for="checkin">Check-in</label>
+        <input type="date" id="checkin" name="checkin" required>
+        <label for="checkout">Check-out</label>
+        <input type="date" id="checkout" name="checkout" required>
+        <label for="guests">Number of Guests</label>
+        <input type="number" id="guests" name="guests" min="1" required>
+        <label for="message">Special Request</label>
+        <textarea id="message" name="message" placeholder="Anything you'd like us to know?"></textarea>
+        <button type="submit" class="submit-btn">Send Reservation Request</button>
+       </form>
+       </div>
+</section>
+        </main>
+        <footer>
+            <h3>Hibret Hotel</h3>
+            <p>Comfort.Hospitality.Memorable Experiences</p><br>
+            <p>2026 Hibret Hotel</p>
+        </footer>
+    </body>
+</html>
